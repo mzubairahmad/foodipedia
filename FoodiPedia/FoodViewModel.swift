@@ -25,7 +25,7 @@ final class FoodViewModel: ObservableObject {
     
     func fetchFoodItemData() async {
         
-        let urlString = "https://api.lifesum.com/v2/foodipedia/codetest?foodid=" + "\(getRandomFoodID())"
+        let urlString = APIURL + "\(getRandomFoodID())"
         if let url = URL(string: urlString) {
             
             isRefreshing = true
@@ -75,11 +75,11 @@ extension FoodViewModel {
         var errorDescription: String? {
             switch self {
             case .failedToDecode:
-                return "Failed to decode response"
+                return APIDecodeError
             case .custom(let error):
                 return error.localizedDescription
             case .invalidStatusCode:
-                return "Request doesn't fall in the valid status code"
+                return APIStatusCodeError
             }
         }
     }

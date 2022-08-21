@@ -25,8 +25,7 @@ struct ContentView: View {
                             await getFoodItemData()
                         }
                     }, label: {
-                        
-                        Text(vm.foodAPIResponse.response.title)
+                        Text((vm.foodAPIResponse.response.title.count != 0) ? vm.foodAPIResponse.response.title : FirstButtonTitle)
                             .underline()
                             .font(.system(size: 20))
                             .padding(.all)
@@ -41,7 +40,7 @@ struct ContentView: View {
                         VStack {
                             Text("\(String(format: "%.0f", vm.foodAPIResponse.response.calories))")
                                 .font(.system(size: 40))
-                            Text("Calories per serving")
+                            Text(CaloriesMessage)
                                 .font(.system(size: 20))
                         }
                         Spacer()
@@ -49,7 +48,7 @@ struct ContentView: View {
                         HStack{
                             Text("Carbs\n \(String(format: "%.2f", vm.foodAPIResponse.response.carbs))")
                             Spacer()
-                            .frame(width: 50, height: 10, alignment: .center)
+                                .frame(width: 50, height: 10, alignment: .center)
                             Text("Fiber\n \(String(format: "%.2f", vm.foodAPIResponse.response.fiber))")
                             Spacer()
                                 .frame(width: 50, height: 10, alignment: .center)
@@ -77,6 +76,13 @@ struct ContentView: View {
             }
         }
         .navigationTitle("FoodiPedia")
+        .alert(isPresented: $vm.hasError,
+               error: vm.error) {
+            Button(action: {
+            }, label: {
+                Text("OK")
+            })
+        }
     }
     
     func getFoodItemData () async {

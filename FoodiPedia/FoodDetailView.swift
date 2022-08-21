@@ -12,8 +12,11 @@ struct FoodDetailView: View {
     let foodModel : FoodModel?
     
     var body: some View {
-        VStack {
-            Text("Hello")
+        ZStack {
+            Text(foodModel?.title ?? "")
+                .font(.system(size: 24))
+            // all other info can be show here as per design or requirement
         }
+        Spacer()
     }
 }

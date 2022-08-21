@@ -18,6 +18,7 @@
 		05AD9D8328B173FD00576D3A /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8228B173FD00576D3A /* FoodViewModel.swift */; };
 		05AD9D8728B2228600576D3A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8628B2228600576D3A /* Extentions.swift */; };
 		05AD9D8928B2310700576D3A /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8828B2310700576D3A /* FoodDetailView.swift */; };
+		05AD9D8B28B2B2C400576D3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8A28B2B2C400576D3A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		05AD9D8228B173FD00576D3A /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		05AD9D8628B2228600576D3A /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		05AD9D8828B2310700576D3A /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		05AD9D8A28B2B2C400576D3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				05AD9D8028B173EA00576D3A /* FoodModel.swift */,
 				05AD9D8228B173FD00576D3A /* FoodViewModel.swift */,
 				05AD9D8628B2228600576D3A /* Extentions.swift */,
+				05AD9D8A28B2B2C400576D3A /* Constants.swift */,
 			);
 			path = FoodiPedia;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				05AD9D5728B171C200576D3A /* ContentView.swift in Sources */,
 				05AD9D8728B2228600576D3A /* Extentions.swift in Sources */,
 				05AD9D5528B171C200576D3A /* FoodiPediaApp.swift in Sources */,
+				05AD9D8B28B2B2C400576D3A /* Constants.swift in Sources */,
 				05AD9D8128B173EA00576D3A /* FoodModel.swift in Sources */,
 				05AD9D8928B2310700576D3A /* FoodDetailView.swift in Sources */,
 			);
