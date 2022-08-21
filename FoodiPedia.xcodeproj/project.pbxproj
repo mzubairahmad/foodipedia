@@ -16,6 +16,8 @@
 		05AD9D7228B171C400576D3A /* FoodiPediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D7128B171C400576D3A /* FoodiPediaUITestsLaunchTests.swift */; };
 		05AD9D8128B173EA00576D3A /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8028B173EA00576D3A /* FoodModel.swift */; };
 		05AD9D8328B173FD00576D3A /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8228B173FD00576D3A /* FoodViewModel.swift */; };
+		05AD9D8728B2228600576D3A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8628B2228600576D3A /* Extentions.swift */; };
+		05AD9D8928B2310700576D3A /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD9D8828B2310700576D3A /* FoodDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		05AD9D7128B171C400576D3A /* FoodiPediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodiPediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05AD9D8028B173EA00576D3A /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		05AD9D8228B173FD00576D3A /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		05AD9D8628B2228600576D3A /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		05AD9D8828B2310700576D3A /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +104,12 @@
 			children = (
 				05AD9D5428B171C200576D3A /* FoodiPediaApp.swift */,
 				05AD9D5628B171C200576D3A /* ContentView.swift */,
+				05AD9D8828B2310700576D3A /* FoodDetailView.swift */,
 				05AD9D5828B171C400576D3A /* Assets.xcassets */,
 				05AD9D5A28B171C400576D3A /* Preview Content */,
 				05AD9D8028B173EA00576D3A /* FoodModel.swift */,
 				05AD9D8228B173FD00576D3A /* FoodViewModel.swift */,
+				05AD9D8628B2228600576D3A /* Extentions.swift */,
 			);
 			path = FoodiPedia;
 			sourceTree = "<group>";
@@ -265,8 +271,10 @@
 			files = (
 				05AD9D8328B173FD00576D3A /* FoodViewModel.swift in Sources */,
 				05AD9D5728B171C200576D3A /* ContentView.swift in Sources */,
+				05AD9D8728B2228600576D3A /* Extentions.swift in Sources */,
 				05AD9D5528B171C200576D3A /* FoodiPediaApp.swift in Sources */,
 				05AD9D8128B173EA00576D3A /* FoodModel.swift in Sources */,
+				05AD9D8928B2310700576D3A /* FoodDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
